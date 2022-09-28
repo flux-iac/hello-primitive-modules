@@ -9,10 +9,10 @@ What is a primitive module?
 
   1. It's a Terraform module that contains only a single resource.
   2. A Terraform primitive module must contains the "values" variable.
-  3. The "values" variable must be an object with fields of option types.
+  3. The "values" variable must be an object with fields of optional types.
   4. The module must be placed under a directory, which is named after the resource.
   5. The directory can optionally contain other files, for example the .terraform.lock.hcl.
-  6. We call a set of primitive module bundled into an OCI image **a package**.
+  6. We call a set of primitive modules bundled into an OCI image, **a package**.
 
 ## Example
 
@@ -28,7 +28,7 @@ For example, we have an imaginary resource "aws_hello_world", so here's the dire
 1 directory, 2 files
 ```
 
-## How to use this module.
+## How to use this module
 
 ```yaml
 cat << EOF | kubectl apply -f -
