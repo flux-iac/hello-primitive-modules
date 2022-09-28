@@ -1,13 +1,14 @@
 pushd .
 
-REPO=tf-controller/hello-primitive-modules
+DIR=hello-primitive-modules
+REPO=tf-controller/$DIR
 PROVIDER_VERSION=v4.32.0
 
 tmp_dir=$(mktemp -d -t ci-XXXXXXXXXX)
 cd $tmp_dir
 
 git clone https://github.com/${REPO}
-cd aws-primitive-modules
+cd $DIR
 
 TAG=$(git rev-parse --short HEAD)
 SOURCE="$(git config --get remote.origin.url)"
