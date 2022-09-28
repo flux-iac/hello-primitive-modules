@@ -14,12 +14,12 @@ What is a primitive module?
 
 ## Example
 
-For example, we have an imaginary resource "hello_world", so here's the directory structure.
+For example, we have an imaginary resource "aws_hello_world", so here's the directory structure.
 
 ```bash
 ❯ tree .
 .
-├── hello_world
+├── aws_hello_world
 │   └── main.tf
 └── README.md
 
