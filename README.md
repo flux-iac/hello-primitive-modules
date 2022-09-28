@@ -1,6 +1,7 @@
 # Hello World Primitive Module
 
 This is an example primitive module for TF-controller.
+It requires TF-controller v0.13.0-rc.2 to run the example in this repo.
 
 ## Primitive module
 
